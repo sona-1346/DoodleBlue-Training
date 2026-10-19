@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register | Campus Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="wrap">
+        <a class="logo" href="index.html">🎓 Campus <span>Events</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="register.html" class="active">Register</a>
+        </nav>
+    </div>
+</header>
+
+<section>
+    <div class="wrap">
+        <h1 class="page-title">Event Registration</h1>
+        <p class="sub">Fill in your details to register for an event.</p>
+
+        <div class="card">
+            <div class="body">
+                <form id="registrationForm" novalidate>
+
+                    <div>
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name"
+                               placeholder="Enter your full name" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email *</label>
+                        <input type="email" id="email"
+                               placeholder="yourname@example.com" required>
+                    </div>
+
+                    <div>
+                        <label for="mobile">Phone Number *</label>
+                        <input type="tel" id="mobile"
+                               placeholder="10-digit mobile number" required>
+                    </div>
+
+                    <div>
+                        <label for="password">Password *</label>
+                        <input type="password" id="password"
+                               placeholder="At least 6 characters" required>
+                    </div>
+
+                    <div>
+                        <label for="department">Department *</label>
+                        <select id="department" required>
+                            <option value="">Select department</option>
+                            <option value="CSE">CSE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="EEE">EEE</option>
+                            <option value="Mechanical">Mechanical</option>
+                            <option value="Civil">Civil</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="event">Choose an Event *</label>
+                        <select id="event" required>
+                            <option value="">Select an event</option>
+                            <option value="Tech Fest 2026">Tech Fest 2026</option>
+                            <option value="Cultural Day">Cultural Day</option>
+                            <option value="Inter-College Sports Meet">
+                                Inter-College Sports Meet
+                            </option>
+                            <option value="AI Workshop">AI Workshop</option>
+                            <option value="Photography Contest">
+                                Photography Contest
+                            </option>
+                            <option value="Career Guidance Talk">
+                                Career Guidance Talk
+                            </option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="date">Preferred Date *</label>
+                        <input type="date" id="date" required>
+                    </div>
+
+                    <div class="full">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" rows="3"
+                                  placeholder="Any additional information..."></textarea>
+                    </div>
+
+                   
+                    <div class="full agreement-row">
+                       <label for="agreement" class="agreement-label">
+                       <input type="checkbox" id="agreement" required>
+                       <span>I agree to the event rules and regulations.</span>
+                     </label>
+                    </div>
+
+
+                    <div class="full">
+                        <p id="formMessage" class="result"
+                           role="status" aria-live="polite"></p>
+
+                        <button class="btn full" type="submit">
+                            Register
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="wrap">
+        <div class="fcols">
+            <div>
+                <h4>🎓 Campus Events</h4>
+                <p>Bringing students together through<br>
+                learning, creativity and collaboration.</p>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="register.html" class="active">Register</a></li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <h4>Follow Us</h4>
+                <a href="#">f</a>
+                <a href="#">◎</a>
+                <a href="#">in</a>
+                <a href="#">▶</a>
+            </div>
+        </div>
+
+        <p class="copy">© 2026 Campus Events. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

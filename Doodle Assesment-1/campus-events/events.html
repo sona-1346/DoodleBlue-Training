@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Events | Campus Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="wrap">
+        <a class="logo" href="index.html">🎓 Campus <span>Events</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html" class="active">Events</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </div>
+</header>
+
+<section>
+    <div class="wrap">
+
+        <div class="row">
+            <div>
+                <h1 class="page-title">All Events</h1>
+                <p class="sub">Explore upcoming events and be a part of exciting experiences.</p>
+            </div>
+
+            <input
+                class="search"
+                id="searchEvents"
+                type="search"
+                placeholder="🔍 Search events..."
+                aria-label="Search events"
+            >
+        </div>
+
+        <p id="eventMessage" class="result" aria-live="polite">
+            Tip: Hover, double-click or right-click an event card!
+        </p>
+
+        <div class="grid g3" id="eventGrid">
+
+            <div class="card event-card" data-name="tech fest 2026 technical">
+                <div class="img i1">
+                    <span class="tag t-tech">Technical</span>
+                </div>
+                <div class="body">
+                    <h3>Tech Fest 2026</h3>
+                    <small>📅 Oct 15, 2026 &nbsp; 📍 Auditorium</small>
+                    <p>Explore innovation, participate in hackathons, and showcase your skills.</p>
+                    <a class="btn" href="event-details.html#techfest">View Details →</a>
+                </div>
+            </div>
+
+            <div class="card event-card" data-name="cultural day cultural">
+                <div class="img i2">
+                    <span class="tag t-cult">Cultural</span>
+                </div>
+                <div class="body">
+                    <h3>Cultural Day</h3>
+                    <small>📅 Oct 20, 2026 &nbsp; 📍 Main Hall</small>
+                    <p>Celebrate talent, creativity and diversity with music, dance and art performances.</p>
+                    <a class="btn" href="event-details.html#cultural">View Details →</a>
+                </div>
+            </div>
+
+            <div class="card event-card" data-name="inter college sports meet sports">
+                <div class="img i3">
+                    <span class="tag t-sport">Sports</span>
+                </div>
+                <div class="body">
+                    <h3>Inter-College Sports Meet</h3>
+                    <small>📅 Oct 28, 2026 &nbsp; 📍 Sports Ground</small>
+                    <p>Compete, collaborate and showcase your sportsmanship.</p>
+                    <a class="btn" href="event-details.html#sports">View Details →</a>
+                </div>
+            </div>
+
+            <div class="card event-card" data-name="ai workshop workshop">
+                <div class="img i4">
+                    <span class="tag t-work">Workshop</span>
+                </div>
+                <div class="body">
+                    <h3>AI Workshop</h3>
+                    <small>📅 Nov 05, 2026 &nbsp; 📍 Seminar Hall</small>
+                    <p>Learn about AI tools and real-world applications.</p>
+                    <a class="btn" href="event-details.html#workshop">View Details →</a>
+                </div>
+            </div>
+
+            <div class="card event-card" data-name="photography contest cultural">
+                <div class="img i5">
+                    <span class="tag t-cult">Cultural</span>
+                </div>
+                <div class="body">
+                    <h3>Photography Contest</h3>
+                    <small>📅 Nov 12, 2026 &nbsp; 📍 Open Grounds</small>
+                    <p>Capture moments and showcase your creativity.</p>
+                    <a class="btn" href="event-details.html#photography">View Details →</a>
+                </div>
+            </div>
+
+            <div class="card event-card" data-name="career guidance talk technical">
+                <div class="img i6">
+                    <span class="tag t-tech">Technical</span>
+                </div>
+                <div class="body">
+                    <h3>Career Guidance Talk</h3>
+                    <small>📅 Nov 18, 2026 &nbsp; 📍 Auditorium</small>
+                    <p>Get insights from industry experts about future opportunities.</p>
+                    <a class="btn" href="event-details.html#career">View Details →</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="wrap">
+        <div class="fcols">
+            <div>
+                <h4>🎓 Campus Events</h4>
+                <p>Bringing students together through<br>learning, creativity and collaboration.</p>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <h4>Follow Us</h4>
+                <a href="#">f</a>
+                <a href="#">◎</a>
+                <a href="#">in</a>
+                <a href="#">▶</a>
+            </div>
+        </div>
+
+        <p class="copy">© 2026 Campus Events. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

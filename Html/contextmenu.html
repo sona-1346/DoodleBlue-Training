@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+     <body>
+    <h1>11. contextmenu-rightclick</h1>
+    <p>right-clcik the box.preventdefalut() stops the browser's normal context menu for this</p>
+    <div id="target" class="box">Right clcik me.<br>
+    </div>
+    <p id="result" class="result">Waiting...</p>
+    <script>
+        const target=document.querySelector("#target");
+        const result=document.querySelector("#result");
+
+        target.addEventListener("contextmenu",(event) =>{
+            event.preventDefault();
+           result.textContent="custom right-click action";
+           target.ddtyle.backgroundColor="#e9d5ff";
+        });
+    </script>
+</body>
+</html>

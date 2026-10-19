@@ -1,0 +1,31 @@
+<html>
+<body>
+<script>
+form.addEventListener("submit", function(event) {
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let mobile = document.getElementById("mobile").value;
+    let password = document.getElementById("password").value;
+
+    let nameRegex = /^[A-Za-z ]{3,}$/;
+    let emailRegex = /^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    let mobileRegex = /^[0-9]\d{9}$/;
+    let passwordRegex = /^[A-Za-z0-9!@#$%^&*]{6,}$/;
+
+    if (!nameRegex.test(name.trim())) {
+        message.innerHTML = "Invalid name";
+    }
+    else if (!emailRegex.test(email)) {
+        message.innerHTML = "Invalid email";
+    }
+    else if (!mobileRegex.test(mobile)) {
+        message.innerHTML = "Invalid mobile number";
+    }
+    else if (!passwordRegex.test(password)) {
+        message.innerHTML = "Invalid password";
+    }
+});
+</script>
+</body>
+</html>

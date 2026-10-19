@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+     <body>
+    <h1>7. mouseove and mouseout</h1>
+    <p>move the pointer over the box and then away.these events can also tire around child element</p>
+    <div id="target" class="box">Move your pointer over me.<br>
+        <strong>Try Moving over this child text</strong>
+    </div>
+    <p id="result" class="result">Waiting...</p>
+    <script>
+        const target=document.querySelector("#target");
+        const result=document.querySelector("#result");
+
+        target.addEventListener("mouseover",() =>{
+            target.style.backgroundColor="#fed7aa";
+            result.textContent="mouseover fired";
+        })
+    </script>
+</body>
+</html>
