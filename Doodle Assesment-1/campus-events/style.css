@@ -529,7 +529,7 @@ footer {
 }
 /* ================= ABOUT BANNER ================= */
 .hero.about {
-    background:linear-gradient(90deg,#000000b0 0%,#00000000 55%),              url("images/aboutimg.png") center/cover no-repeat;
+    background:linear-gradient(90deg,#000000b0 0%,#00000000 55%),        url("images/aboutimg.png") center/cover no-repeat;
     min-height:420px;
 }
 .hero.about h1 {
